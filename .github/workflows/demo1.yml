@@ -13,7 +13,7 @@ on:
       - 'feat/**' # feat/new feat/new/button
       # developer-1 would not be covered with these annotations
     paths-ignore:
-      - '.github/workflow/*'
+      - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
