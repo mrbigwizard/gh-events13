@@ -5,6 +5,15 @@ on:
       - opened
       - edited
   workflow_dispatch: 
+  push: 
+    branches: 
+      - master #master
+      - main #main
+      - 'dev-*' #dev-new dev-this-is-new
+      - 'feat/**' # feat/new feat/new/button
+      # developer-1 would not be covered with these annotations
+    paths-ignore:
+      - '.github/workflow/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
